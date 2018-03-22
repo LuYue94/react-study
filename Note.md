@@ -23,4 +23,6 @@ npm install --save npm-run-all
 ### 第二种：修改 create-react-app的webpack配置
 /node_modules/react-scripts/config
 
-loader
+获取所有配置
+npm run eject
+npm install sass-loader node-sass --save-dev

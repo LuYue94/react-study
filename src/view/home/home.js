@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './home.css';
 
-console.log('test')
+console.log('home')
 class Home extends Component {
   render(){
     return
