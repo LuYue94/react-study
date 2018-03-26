@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
+
 import logo from './logo.svg';
 import './App.scss';
-
-import { home } from "./view/home/home";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <aside>
+        <aside className="app_aside">
+          <ul>
+            {/* <Link to="/React">React基础</Link>
+            <Link>Ant Design</Link>
+            <Link>Component</Link>
+            <Link>高阶</Link> */}
+          </ul>
           <img src={logo} className="App-logo" alt="logo" />
         </aside>
-        <section>
+        <section className="app_container">
 
         </section>
       </div>
