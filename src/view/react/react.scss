@@ -1,0 +1,16 @@
+.react{
+  .top{
+    ul{
+      border-bottom: 1px solid #409eff;
+      display: flex;
+      li{
+        padding: 8px;
+      }
+      a.active{
+        color: red;
+        font-weight: bold;
+      }
+    }
+  }
+  .bottom{}
+}

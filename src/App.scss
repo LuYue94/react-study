@@ -19,6 +19,11 @@ body {
     height: 100%;
 }
 
+button{
+  padding:7px 10px;
+  cursor: pointer;
+}
+
 $aside_width: 200px;
 .app_aside {
     position: fixed;
@@ -37,10 +42,16 @@ $aside_width: 200px;
             line-height: 2;
             color: #409eff;
             cursor: pointer;
-            margin-top: 10px;
+            margin-bottom: 10px;
         }
-        li.active {
-            color: red;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        a.active {
+            color: #FFF;
+            background: #409eff;
         }
     }
     .App-logo {
@@ -59,4 +70,32 @@ $aside_width: 200px;
     padding-left: $aside_width;
     box-sizing: border-box;
     overflow-y: auto;
+    .app_content{
+      padding: 10px;
+      box-sizing: border-box;
+      height: 100%;
+    }
+}
+
+hr{
+  border-color: #409eff;
+  border-style: dashed;
+  margin: 10px 0;
+}
+
+// 文字介绍
+h1{
+  line-height: 2;
+  font-size: 16px;
+  span{
+    color: #409eff;
+    margin-right: 10px;
+  }
+}
+
+// 代码标题
+h2{
+  color: #409eff;
+  line-height: 2;
+  font-size: 16px;
 }
