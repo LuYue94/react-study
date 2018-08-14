@@ -10,14 +10,18 @@ class Counter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      counter: 0,
+      name: ''
+    }
+  }
+
+  componentDidMount() {
+    this.setState({
       counter: this.props.start,
       name: `${this.props.name}
         start:${this.props.start}
         step:${this.props.step}`
-    };
-  }
-
-  componentDidMount() {
+    })
     this.timerID = setInterval(
       () => this.tick(), 1000
     )
