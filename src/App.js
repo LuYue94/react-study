@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import logo from './logo.svg';
-import './App.scss';
+import './scss/App.scss';
 import '../node_modules/highlight.js/styles/atom-one-dark.css'
 
 import {
@@ -23,7 +23,7 @@ class App extends Component {
           <aside className="app_aside">
             <ul>
               <li><a href="/">←返回主页</a></li>
-              <li><NavLink to="/react">React v16.4</NavLink></li>
+              <li><NavLink to="/react">React v16.6</NavLink></li>
               <li><NavLink to="/redux">Redux</NavLink></li>
             </ul>
             <img src={logo} className="App-logo" alt="logo" />
