@@ -14,6 +14,7 @@ import {
 
 import ReactV from './view/react/react'
 import ReduxV from './view/redux/redux'
+import CommentApp from './view/comment/CommentApp';
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
               <li><a href="/">←返回主页</a></li>
               <li><NavLink to="/react">React v16.6</NavLink></li>
               <li><NavLink to="/redux">Redux</NavLink></li>
+              <li><NavLink to="/comment">评论功能</NavLink></li>
             </ul>
             <img src={logo} className="App-logo" alt="logo" />
           </aside>
@@ -33,6 +35,7 @@ class App extends Component {
               <Switch>
                 <Route path="/react" component={ReactV} />
                 <Route path="/redux" component={ReduxV} />
+                <Route path="/comment" component={CommentApp} />
                 <Redirect path="/" to={{ pathname: '/react' }} />
               </Switch>
             </div>

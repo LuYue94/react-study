@@ -1,7 +1,7 @@
 import React from "react";
 
 function showChildrenIndex(children, index) {
-  return children.map(function (val, i, item) {
+  return children.map(function (val, i) {
     if (val.props.name === 'child' + index) {
       return val
     } else {
@@ -20,7 +20,7 @@ class Parent extends React.Component {
   }
 
   componentDidMount() {
-
+    console.log('this.props :', this.props);
   }
 
   componentWillUnmount() {
