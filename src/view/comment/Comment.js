@@ -8,6 +8,7 @@ class Comment extends Component {
           <span>{this.props.comment.username} </span>：
         </div>
         <p>{this.props.comment.content}</p>
+        <div className='comment-time'>{this.props.comment.time}</div>
       </div>
     )
   }

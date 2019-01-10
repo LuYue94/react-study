@@ -8,7 +8,11 @@ class CommentApp extends Component {
   constructor() {
     super()
     this.state = {
-      comments: []
+      comments: [
+        { username: 'Jerry', content: 'Hello', time: '2018-12-18 13:53:01' },
+        { username: 'Tomy', content: 'World', time: '2018-12-18 16:03:18' },
+        { username: 'Lucy', content: 'Good', time: '2018-12-18 18:13:29' }
+      ]
     }
   }
 
@@ -23,11 +27,6 @@ class CommentApp extends Component {
   }
 
   render() {
-    // const comments = [
-    //   { username: 'Jerry', content: 'Hello' },
-    //   { username: 'Tomy', content: 'World' },
-    //   { username: 'Lucy', content: 'Good' }
-    // ]
     return (
       <div className="wrapper">
         <CommentInput onSubmit={this.handleSubmitComment.bind(this)} />

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import logo from './logo.svg';
-import './scss/App.scss';
+import logo from './assets/logo.svg';
+import './style/App.scss';
 import '../node_modules/highlight.js/styles/atom-one-dark.css'
 
 import {

@@ -4,8 +4,8 @@ class CommentInput extends Component {
   constructor() {
     super()
     this.state = {
-      username:'',
-      content:'',
+      username: '',
+      content: '',
     }
   }
 
@@ -15,18 +15,20 @@ class CommentInput extends Component {
     })
   }
 
-  handleContentChange(e){
+  handleContentChange(e) {
     this.setState({
       content: e.target.value
     })
   }
 
-  handleSubmit(e){
-    if(this.props.onSubmit){
-      const {username,content} = this.state
-      this.props.onSubmit({username,content})
+  handleSubmit(e) {
+    if (this.props.onSubmit) {
+      const { username, content } = this.state
+      const time = new Date().getTime()
+      console.log('new Date() :', time);
+      // this.props.onSubmit({ username, content, time })
     }
-    this.setState({content:''})
+    this.setState({ content: '' })
   }
 
 
@@ -52,7 +54,7 @@ class CommentInput extends Component {
         </div>
         <div className='comment-field-button'>
           <button
-          onClick={this.handleSubmit.bind(this)}>
+            onClick={this.handleSubmit.bind(this)}>
             发布
           </button>
         </div>

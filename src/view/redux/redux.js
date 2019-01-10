@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './redux.scss';
-import store from '../../store.js';
+import store from '../../store/store.js';
 import { addToCart, deleteFromCart } from '../../actions/cart-actions';
 import { addQuantity, delQuantity } from '../../actions/products-actions';
 
