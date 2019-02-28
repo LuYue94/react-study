@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-
+import { parseTime } from '@/utils/index'
 class CommentInput extends Component {
   constructor() {
     super()
@@ -24,9 +24,9 @@ class CommentInput extends Component {
   handleSubmit(e) {
     if (this.props.onSubmit) {
       const { username, content } = this.state
-      const time = new Date().getTime()
+      const time = parseTime(new Date().getTime(), '{y}-{m}-{d} {h}:{i}:{s}')
       console.log('new Date() :', time);
-      // this.props.onSubmit({ username, content, time })
+      this.props.onSubmit({ username, content, time })
     }
     this.setState({ content: '' })
   }

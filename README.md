@@ -36,3 +36,8 @@ npm install sass-loader node-sass --save-dev
     react-router-config 静态路由配置的小助手
 
     https://blog.csdn.net/sinat_17775997/article/details/69218382
+
+## eslint
+npm i babel-eslint  eslint-config-airbnb eslint-config-standard  eslint-loader  eslint-plugin-import  eslint-plugin-jsx-a11y  eslint-plugin-node  eslint-plugin-promise  eslint-plugin-react eslint-plugin-standard -D
+
+https://segmentfault.com/a/1190000015206905
