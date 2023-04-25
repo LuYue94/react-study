@@ -1,43 +1,46 @@
-npm start
+# Getting Started with Create React App
 
-npm run build
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 代理
----- package.json
-+    "proxy": "http://localhost:3001/",
+## Available Scripts
 
-## scss
+In the project directory, you can run:
 
-### 第一种：修改 npm script
-npm install --save node-sass
-npm install --save npm-run-all
+### `npm start`
 
----- package.json
-+    "build-css": "node-sass src/ -o src/",
-+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
-+    "start-js": "react-scripts start",
-+    "start": "npm-run-all -p watch-css start-js",
-+    "build-js": "react-scripts build",
-+    "build": "npm-run-all build-css build-js",
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### 第二种：修改 create-react-app的webpack配置
-/node_modules/react-scripts/config
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-获取所有配置
-npm run eject
-npm install sass-loader node-sass --save-dev
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## react-router 4.0
-    react-router React Router 核心
-    react-router-dom 用于 DOM 绑定的 React Router
-    react-router-native 用于 React Native 的 React Router
-    react-router-redux React Router 和 Redux 的集成
-    react-router-config 静态路由配置的小助手
+### `npm run build`
 
-    https://blog.csdn.net/sinat_17775997/article/details/69218382
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## eslint
-npm i babel-eslint  eslint-config-airbnb eslint-config-standard  eslint-loader  eslint-plugin-import  eslint-plugin-jsx-a11y  eslint-plugin-node  eslint-plugin-promise  eslint-plugin-react eslint-plugin-standard -D
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-https://segmentfault.com/a/1190000015206905
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
